@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Online Item Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label{
+            float: left;
+            width: 90px;
+         }
+         input[type=text]{
+             margin: 2px;
+             border: groove white;
+            
+         }
+         input[type=submit]{
+             cursor: pointer;
+             position: relative;
+             left: 90px;
+             margin:5px;
+             background: orangered; border:2px solid darksalmon;border-radius:15px;
+             box-shadow: gray 2px 3px 2px;height:40px;width:158px;font-size: 1em;cursor: pointer;
+         }
+         
+         
+    </style>
+    </head>
+    <body>
+        <h1>Online Item Registration Application</h1><br>
+            
+        <form action="AddItem" method="get">
+            <label for="itemCode">Item Code:</label>
+            <input type="text" name="itemCode" value=""><br>
+            <label for="itemName">Item Name:</label>
+            <input type="text" name="itemName" value =""><br>
+            <label for="Price">Price:</label>
+            <input type="text" name="Price" value=""><br><br>
+            <input type="submit" value="Add Item">
+        </form>
+        <form action="ShowItem" method="get">
+            <input type="submit" value="Show All">
+        </form>
+    </body>
+</html>
