@@ -1,0 +1,69 @@
+/*
+ * 
+ * Javabean or object
+ *
+ */
+
+package business;
+
+/**
+ *
+ * @author Shirin Mizan
+ */
+public class Item {
+    private int iCode; 
+    private String iName; 
+    private double price; 
+    
+    public Item(){}
+    
+    // A constructor with Parameters 
+    public Item(int iCode, String iName, double price){
+        this.iCode=iCode; 
+        this.iName=iName;
+        this.price=price;
+    }
+
+    /**
+     * @return the iCode
+     */
+    public int getiCode() {
+        return iCode;
+    }
+
+    /**
+     * @param iCode the iCode to set
+     */
+    public void setiCode(int iCode) {
+        this.iCode = iCode;
+    }
+
+    /**
+     * @return the iName
+     */
+    public String getiName() {
+        return iName;
+    }
+
+    /**
+     * @param iName the iName to set
+     */
+    public void setiName(String iName) {
+        this.iName = iName;
+    }
+
+    /**
+     * @return the price
+     */
+    public double getPrice() {
+        return price;
+    }
+
+    /**
+     * @param price the price to set
+     */
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    
+}
